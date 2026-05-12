@@ -5,6 +5,12 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{827E0CD3-B72D-47B6-A68D-7590B98EB39B}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C4D6B22F-8A1E-4B3A-9C7D-5E2F1B8A3C0D}"
+	ProjectSection(SolutionItems) = preProject
+		AGENTS.md = AGENTS.md
+		CONTEXT.md = CONTEXT.md
+	EndProjectSection
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoroscopeBot.Domain", "src\HoroscopeBot.Domain\HoroscopeBot.Domain.csproj", "{A35A0E65-5063-4C4A-9BFC-90551B7EBC14}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoroscopeBot.Application", "src\HoroscopeBot.Application\HoroscopeBot.Application.csproj", "{32CAB974-822D-4EA9-9612-F84A1B582D5D}"
