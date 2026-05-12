@@ -1,0 +1,15 @@
+C:\Users\olegp\Desktop\Личная\Opencode scripts\HoroscopeBot\src\HoroscopeBot.Application\bin\Debug\net9.0\HoroscopeBot.Application.deps.json
+C:\Users\olegp\Desktop\Личная\Opencode scripts\HoroscopeBot\src\HoroscopeBot.Application\bin\Debug\net9.0\HoroscopeBot.Application.dll
+C:\Users\olegp\Desktop\Личная\Opencode scripts\HoroscopeBot\src\HoroscopeBot.Application\bin\Debug\net9.0\HoroscopeBot.Application.pdb
+C:\Users\olegp\Desktop\Личная\Opencode scripts\HoroscopeBot\src\HoroscopeBot.Application\bin\Debug\net9.0\HoroscopeBot.Domain.dll
+C:\Users\olegp\Desktop\Личная\Opencode scripts\HoroscopeBot\src\HoroscopeBot.Application\bin\Debug\net9.0\HoroscopeBot.Domain.pdb
+C:\Users\olegp\Desktop\Личная\Opencode scripts\HoroscopeBot\src\HoroscopeBot.Application\obj\Debug\net9.0\HoroscopeBot.Application.csproj.AssemblyReference.cache
+C:\Users\olegp\Desktop\Личная\Opencode scripts\HoroscopeBot\src\HoroscopeBot.Application\obj\Debug\net9.0\HoroscopeBot.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\olegp\Desktop\Личная\Opencode scripts\HoroscopeBot\src\HoroscopeBot.Application\obj\Debug\net9.0\HoroscopeBot.Application.AssemblyInfoInputs.cache
+C:\Users\olegp\Desktop\Личная\Opencode scripts\HoroscopeBot\src\HoroscopeBot.Application\obj\Debug\net9.0\HoroscopeBot.Application.AssemblyInfo.cs
+C:\Users\olegp\Desktop\Личная\Opencode scripts\HoroscopeBot\src\HoroscopeBot.Application\obj\Debug\net9.0\HoroscopeBot.Application.csproj.CoreCompileInputs.cache
+C:\Users\olegp\Desktop\Личная\Opencode scripts\HoroscopeBot\src\HoroscopeBot.Application\obj\Debug\net9.0\Horoscop.B03D06D9.Up2Date
+C:\Users\olegp\Desktop\Личная\Opencode scripts\HoroscopeBot\src\HoroscopeBot.Application\obj\Debug\net9.0\HoroscopeBot.Application.dll
+C:\Users\olegp\Desktop\Личная\Opencode scripts\HoroscopeBot\src\HoroscopeBot.Application\obj\Debug\net9.0\refint\HoroscopeBot.Application.dll
+C:\Users\olegp\Desktop\Личная\Opencode scripts\HoroscopeBot\src\HoroscopeBot.Application\obj\Debug\net9.0\HoroscopeBot.Application.pdb
+C:\Users\olegp\Desktop\Личная\Opencode scripts\HoroscopeBot\src\HoroscopeBot.Application\obj\Debug\net9.0\ref\HoroscopeBot.Application.dll
