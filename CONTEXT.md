@@ -30,8 +30,8 @@ HoroscopeBot/
 └── src/
     ├── HoroscopeBot.Domain/          [classlib]
     │   ├── Entities/
-    │   │   ├── User.cs              TelegramId, BirthDate, BirthTime, BirthCity, ZodiacSign, TimeZone, IsActive
-    │   │   └── Horoscope.cs         UserId, Date, Text, AiProvider
+    │   │   ├── User.cs              int Id, TelegramId, BirthDate, BirthTime, BirthCity, ZodiacSign, TimeZone, IsActive
+    │   │   └── Horoscope.cs         int Id, int UserId, DateTime Date, Text, AiProvider
     │   ├── Enums/
     │   │   ├── ZodiacSign.cs        12 знаков (Aries..Pisces)
     │   │   └── AiProvider.cs        Claude, Gpt

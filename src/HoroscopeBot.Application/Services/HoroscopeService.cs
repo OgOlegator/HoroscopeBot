@@ -34,9 +34,8 @@ public class HoroscopeService : IHoroscopeService
 
         var horoscope = new Horoscope
         {
-            Id = Guid.NewGuid(),
             UserId = user.Id,
-            Date = DateOnly.FromDateTime(DateTime.UtcNow),
+            Date = DateTime.UtcNow.Date,
             Text = text,
             AiProvider = Domain.Enums.AiProvider.Claude,
             GeneratedAt = DateTime.UtcNow
@@ -70,9 +69,8 @@ public class HoroscopeService : IHoroscopeService
 
                     var horoscope = new Horoscope
                     {
-                        Id = Guid.NewGuid(),
                         UserId = user.Id,
-                        Date = DateOnly.FromDateTime(DateTime.UtcNow),
+                        Date = DateTime.UtcNow.Date,
                         Text = text,
                         AiProvider = provider,
                         GeneratedAt = DateTime.UtcNow

@@ -109,7 +109,7 @@ public class UpdateHandler
 
     private async Task HandleBirthDateInput(long chatId, string text, Message message, CancellationToken ct)
     {
-        if (!DateOnly.TryParseExact(text, ["dd.MM.yyyy", "d.M.yyyy"], null, System.Globalization.DateTimeStyles.None, out var birthDate))
+        if (!DateTime.TryParseExact(text, ["dd.MM.yyyy", "d.M.yyyy"], null, System.Globalization.DateTimeStyles.None, out var birthDate))
         {
             await _bot.SendMessage(chatId,
                 "Неверный формат. Напиши дату как ДД.ММ.ГГГГ, например: 15.03.1990",
@@ -121,7 +121,7 @@ public class UpdateHandler
             TelegramId: chatId,
             UserName: message.From?.Username,
             FirstName: message.From?.FirstName,
-            BirthDate: birthDate,
+            BirthDate: birthDate.Date,
             BirthTime: null,
             BirthCity: null,
             TimeZone: "Europe/Moscow"

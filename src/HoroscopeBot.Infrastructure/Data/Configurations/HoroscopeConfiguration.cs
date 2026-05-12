@@ -10,11 +10,17 @@ public class HoroscopeConfiguration : IEntityTypeConfiguration<Horoscope>
     {
         builder.HasKey(x => x.Id);
 
+        builder.Property(x => x.Id)
+            .ValueGeneratedOnAdd();
+
         builder.Property(x => x.Text).IsRequired();
 
         builder.Property(x => x.AiProvider)
             .HasConversion<string>()
             .HasMaxLength(20);
+
+        builder.Property(x => x.Date)
+            .IsRequired();
 
         builder.HasOne(x => x.User)
             .WithMany(x => x.Horoscopes)

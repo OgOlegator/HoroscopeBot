@@ -35,7 +35,6 @@ public class UserService : IUserService
 
         var user = new User
         {
-            Id = Guid.NewGuid(),
             TelegramId = request.TelegramId,
             UserName = request.UserName,
             FirstName = request.FirstName,
@@ -68,7 +67,7 @@ public class UserService : IUserService
         new(user.Id, user.TelegramId, user.UserName, user.FirstName, user.BirthDate,
             user.BirthTime, user.BirthCity, user.ZodiacSign, user.IsActive);
 
-    internal static ZodiacSign CalculateZodiacSign(DateOnly birthDate)
+    internal static ZodiacSign CalculateZodiacSign(DateTime birthDate)
     {
         return (birthDate.Month, birthDate.Day) switch
         {

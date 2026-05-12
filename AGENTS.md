@@ -9,7 +9,9 @@ Multi-project: Domain → Application → Infrastructure → WebApi + Bot
 ## Конвенции
 - Все DTO — `record`
 - Всегда передавать `CancellationToken ct` последним параметром
-- `DateOnly` для дат, `TimeOnly` для времени, `long` для TelegramId
+- Entity Id — `int` (автоинкремент EF Core, не задавать явно)
+- `DateOnly` для дат рождения, `TimeOnly` для времени, `long` для TelegramId
+- `DateTime` для Date в Horoscope (хранить `UtcNow.Date`, т.е. 00:00:00)
 - Комментарии НЕ добавлять
 - ZodiacSign — `enum` в коде, `string` в БД (`HasConversion<string>`)
 - Новые AI провайдеры: реализовать `IHoroscopeAiClient`, добавить в `AiClientFactory`

@@ -19,9 +19,9 @@ public class HoroscopeRepository : IHoroscopeRepository
         await _db.SaveChangesAsync(ct);
     }
 
-    public async Task<Horoscope?> GetTodayByUserAsync(Guid userId, CancellationToken ct = default)
+    public async Task<Horoscope?> GetTodayByUserAsync(int userId, CancellationToken ct = default)
     {
-        var today = DateOnly.FromDateTime(DateTime.UtcNow);
+        var today = DateTime.UtcNow.Date;
         return await _db.Horoscopes
             .AsNoTracking()
             .Include(x => x.User)

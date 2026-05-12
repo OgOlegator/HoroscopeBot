@@ -5,5 +5,5 @@ namespace HoroscopeBot.Domain.Interfaces;
 public interface IHoroscopeRepository
 {
     Task AddAsync(Horoscope horoscope, CancellationToken ct = default);
-    Task<Horoscope?> GetTodayByUserAsync(Guid userId, CancellationToken ct = default);
+    Task<Horoscope?> GetTodayByUserAsync(int userId, CancellationToken ct = default);
 }
