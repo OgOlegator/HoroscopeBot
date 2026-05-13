@@ -41,6 +41,12 @@ public class AiClientFactory
                 _options.OpenAiModel,
                 _loggerFactory.CreateLogger<OpenAiClient>()),
 
+            "github" => new GithubClient(
+                _httpFactory.CreateClient("GitHub"),
+                _options.GithubApiKey,
+                _options.GithubModel,
+                _loggerFactory.CreateLogger<GithubClient>()),
+
             _ => throw new ArgumentException($"Unknown AI provider: {provider}")
         };
     }
@@ -54,4 +60,6 @@ public class AiOptions
     public string AnthropicModel { get; set; } = "claude-sonnet-4-20250514";
     public string OpenAiApiKey { get; set; } = string.Empty;
     public string OpenAiModel { get; set; } = "gpt-4o";
+    public string GithubApiKey { get; set; } = string.Empty;
+    public string GithubModel { get; set; } = "openai/gpt-4o-mini";
 }

@@ -37,6 +37,12 @@ public static class DependencyInjection
             client.Timeout = TimeSpan.FromSeconds(30);
         });
 
+        services.AddHttpClient("GitHub", client =>
+        {
+            client.BaseAddress = new Uri("https://models.github.ai");
+            client.Timeout = TimeSpan.FromSeconds(30);
+        });
+
         services.AddSingleton<AiClientFactory>();
         services.AddScoped<IHoroscopeGenerator, AiHoroscopeGenerator>();
 
