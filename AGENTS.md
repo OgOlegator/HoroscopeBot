@@ -19,7 +19,7 @@ Multi-project: Domain → Application → Infrastructure → WebApi + Bot
 - Новые кроны: `BackgroundService`, без Quartz/Hangfire
 - Один гороскоп на пользователя в день — всегда проверять `GetTodayByUserAsync`
 - Ошибки AI логировать через `LogWarning`, fallback на второй провайдер
-- Миграции: `dotnet ef migrations add Name --project src/HoroscopeBot.Infrastructure --startup-project src/HoroscopeBot.WebApi`
+- Миграции: `dotnet ef migrations add Name --project HoroscopeBot/HoroscopeBot.Infrastructure --startup-project HoroscopeBot/HoroscopeBot.WebApi`
 - Для быстрой проверки сборки: `dotnet build`
 
 ## Запуск
@@ -28,6 +28,6 @@ docker compose up -d                        # PostgreSQL
 $env:TelegramBotToken = "..."
 $env:AI__AnthropicApiKey = "..."
 # затем:
-dotnet run --project src\HoroscopeBot.WebApi
-dotnet run --project src\HoroscopeBot.Bot
+dotnet run --project HoroscopeBot\HoroscopeBot.WebApi
+dotnet run --project HoroscopeBot\HoroscopeBot.Bot
 ```
